@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>示例</title>
+    <script src="text-order.js"></script>
+    <style>
+        /* 设置背景为纯黑，并移除默认边距 */
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1.stroke-order-in {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+            /* 即使 Canvas 还没加载，文字占位颜色也设为白色 */
+            color: white; 
+        }
+
+        h1.stroke-order-in canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="stroke-order-in" 
+        data-font-size="70" data-stroke-k="0.05" data-rounded="false" data-speed="faster"
+        data-ease-out="true" data-ease-in="false" data-async="true" data-delay="100" 
+        data-async-interval="70" data-color="255, 255, 255, 1">
+        POWERD BY</h1>
+
+    <h1 class="stroke-order-in" 
+        data-font-size="200" data-stroke-k="0.09" data-rounded="false" data-speed="faster"
+        data-ease-out="true" data-ease-in="false" data-async="true" data-delay="200" 
+        data-async-interval="70" data-color="255, 255, 255, 1">
+        DYNAMIC UI</h1>
+
+    <h1 class="stroke-order-in" 
+        data-font-size="70" data-stroke-k="0.05" data-rounded="false" data-speed="faster"
+        data-ease-out="true" data-ease-in="false" data-async="true" data-delay="100" 
+        data-async-interval="70" data-color="white">
+        BY JHCWCOLIN</h1>
+</body>
+
+</html>
